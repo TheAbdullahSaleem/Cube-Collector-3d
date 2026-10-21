@@ -1,39 +1,93 @@
 extends CharacterBody3D
-@export var anim_player : AnimationPlayer
-
+var tween : Tween
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
 
 func _physics_process(delta: float) -> void:
+	if tween and tween.is_running():
+		return
+	if not is_on_floor():
+		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept"):
-		animate()
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	#var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	#var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	#if direction:
-		#velocity.x = direction.x * SPEED
-		#velocity.z = direction.z * SPEED
-	#else:
-		#velocity.x = move_toward(velocity.x, 0, SPEED)
-		#velocity.z = move_toward(velocity.z, 0, SPEED)
+	if Input.is_action_just_pressed("forward"):
+		animate_z()
+	elif Input.is_action_just_pressed("backward"):
+		animate_minusz()
+	elif Input.is_action_just_pressed("left"):
+		animate_x()
+	elif Input.is_action_just_pressed("right"):
+		animate_minusx()
+
+
 
 	move_and_slide()
-func animate():
-	var tween = create_tween()
+func animate_z():
+	if tween and tween.is_running():
+		return
+	tween = create_tween()
 	tween.set_parallel(true)
 	tween.tween_property(
 		self,
-		"rotation_degrees:x",
-		rotation_degrees.x + 90.0,
+		"rotation:x",
+		rotation.x + deg_to_rad(90.0),
 		1
 	)
 	tween.tween_property(
 		self,
 		"position:z",
 		position.z + 1,
+		1
+	)
+func animate_minusz():
+	if tween and tween.is_running():
+		return
+	tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(
+		self,
+		"rotation:x",
+		rotation.x - deg_to_rad(90.0),
+		1
+	)
+	tween.tween_property(
+		self,
+		"position:z",
+		position.z - 1,
+		1
+	)
+func animate_x():
+	if tween and tween.is_running():
+		return
+	tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(
+		self,
+		"rotation:z",
+		rotation.z + deg_to_rad(90.0),
+		1
+	)
+	tween.tween_property(
+		self,
+		"position:x",
+		position.x + 1,
+		1
+	)
+func animate_minusx():
+	if tween and tween.is_running():
+		return
+	tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(
+		self,
+		"rotation:z",
+		rotation.z - deg_to_rad(90.0),
+		1
+	)
+	tween.tween_property(
+		self,
+		"position:x",
+		position.x - 1,
 		1
 	)

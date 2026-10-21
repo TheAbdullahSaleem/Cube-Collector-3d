@@ -21,4 +21,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.0168295)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5216702, 0)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=167033854]
-transform = Transform3D(-0.034391344, 0, 0.9994085, 0, 1, 0, -0.9994085, 0, -0.034391344, 2.1440687, 1.0742432, 1.0855783)
+transform = Transform3D(-0.99774146, -0.051589362, 0.043017913, 0.029129768, 0.24475439, 0.96914744, -0.06052652, 0.9682117, -0.24269882, 0.24453914, 2.002976, 0.010616064)
+fov = 114.46691
+
+[node name="Tile4" parent="." unique_id=1770146868 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0385146, 0, 0)
+
+[node name="Tile5" parent="." unique_id=1139470542 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0385146, 0, 1.0097976)
+
+[node name="Tile6" parent="." unique_id=2083394291 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0385146, 0, 2.0168295)
+
+[node name="Tile7" parent="." unique_id=962923550 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0360947, 0, 0)
+
+[node name="Tile8" parent="." unique_id=1087732095 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0360947, 0, 1.0097976)
+
+[node name="Tile9" parent="." unique_id=438213700 instance=ExtResource("1_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0360947, 0, 2.0168295)
