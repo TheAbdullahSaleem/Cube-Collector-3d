@@ -4,6 +4,17 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kf11u"]
 
+[sub_resource type="Gradient" id="Gradient_rpqav"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rpqav"]
+gradient = SubResource("Gradient_rpqav")
+fill_from = Vector2(0.1010101, 0.14141414)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1q5r"]
+albedo_color = Color(0.47516507, 1, 0.76414543, 1)
+albedo_texture = SubResource("GradientTexture2D_rpqav")
+roughness = 0.0
+
 [sub_resource type="BoxMesh" id="BoxMesh_nl1qf"]
 
 [node name="Player" type="CharacterBody3D" unique_id=423152385]
@@ -15,4 +26,5 @@ shape = SubResource("BoxShape3D_kf11u")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=790436879]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_y1q5r")
 mesh = SubResource("BoxMesh_nl1qf")

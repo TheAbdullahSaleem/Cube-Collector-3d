@@ -11,11 +11,11 @@ func _process(delta: float) -> void:
 	if is_falling :
 		global_position.y -= falling_speed*delta
 
-func _on_area_3d_body_exited(body: CharacterBody3D) -> void:
+func _on_area_3d_body_exited(body: Node3D) -> void:
 	if body.name == "Player":
 		falling()
 	
 func falling():
 	is_falling = true
-	await get_tree().create_timer(3.0).timeout
+	await get_tree().create_timer(1.0).timeout
 	queue_free()

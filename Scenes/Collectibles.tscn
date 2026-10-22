@@ -5,7 +5,7 @@
 [sub_resource type="BoxMesh" id="BoxMesh_kf11u"]
 
 [node name="Collectibles" type="StaticBody3D" unique_id=987838549]
-transform = Transform3D(0.4375, -0.10825317, 0.21650638, 0.23335433, 0.06975037, -0.43666995, 0.06433902, 0.4831316, 0.111554265, 0, 0, 0)
+transform = Transform3D(0.35409948, 0.001531288, 0.35300314, 0.28992715, 0.28397807, -0.29205942, -0.20138478, 0.4115266, 0.20022506, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1016827576]
 shape = SubResource("BoxShape3D_y1q5r")

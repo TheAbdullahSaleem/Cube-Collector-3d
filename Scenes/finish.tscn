@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cv6iys0p6g5ux"]
+
+[ext_resource type="Script" uid="uid://bvgismxxkmt1e" path="res://finish.gd" id="1_nv66a"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y1q5r"]
+size = Vector3(1, 0.10595703, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y1q5r"]
+size = Vector3(1, 0.2, 1)
+
+[node name="Finish" type="AnimatableBody3D" unique_id=1770146868]
+script = ExtResource("1_nv66a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2137581547]
+mesh = SubResource("BoxMesh_y1q5r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=743571812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.008154988, 0)
+shape = SubResource("BoxShape3D_y1q5r")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1965572501]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1470189052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13759041, 0)
+shape = SubResource("BoxShape3D_y1q5r")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
