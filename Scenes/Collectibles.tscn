@@ -5,11 +5,10 @@
 [sub_resource type="BoxMesh" id="BoxMesh_kf11u"]
 
 [node name="Collectibles" type="StaticBody3D" unique_id=987838549]
+transform = Transform3D(0.4375, -0.10825317, 0.21650638, 0.23335433, 0.06975037, -0.43666995, 0.06433902, 0.4831316, 0.111554265, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1016827576]
-transform = Transform3D(0.3640941, 0.34212247, 0.01968945, -0.28947175, 0.29166916, 0.2848424, 0.18341638, -0.21881798, 0.41045967, 0, 0, 0)
 shape = SubResource("BoxShape3D_y1q5r")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1883776122]
-transform = Transform3D(0.3640941, 0.34212247, 0.01968945, -0.28947175, 0.29166916, 0.2848424, 0.18341638, -0.21881798, 0.41045967, 0, 0, 0)
 mesh = SubResource("BoxMesh_kf11u")

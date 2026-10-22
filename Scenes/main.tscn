@@ -12,10 +12,10 @@ shadow_enabled = true
 [node name="Tile" parent="." unique_id=2049357243 instance=ExtResource("1_bo1nx")]
 
 [node name="Tile2" parent="." unique_id=238518847 instance=ExtResource("1_bo1nx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0097976)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
 
 [node name="Tile3" parent="." unique_id=1821310315 instance=ExtResource("1_bo1nx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.0168295)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
 [node name="Player" parent="." unique_id=423152385 instance=ExtResource("2_8gbba")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5216702, 0)

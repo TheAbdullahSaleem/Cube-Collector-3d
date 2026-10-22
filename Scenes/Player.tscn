@@ -6,12 +6,13 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_nl1qf"]
 
-[node name="Player" type="CharacterBody3D" unique_id=423152385 node_paths=PackedStringArray("anim_player")]
+[node name="Player" type="CharacterBody3D" unique_id=423152385]
 script = ExtResource("1_rpqav")
-anim_player = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=716547855]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 shape = SubResource("BoxShape3D_kf11u")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=790436879]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 mesh = SubResource("BoxMesh_nl1qf")
