@@ -2,16 +2,25 @@
 
 [ext_resource type="Script" uid="uid://bp5sufsxydq2c" path="res://Scenes/tile.gd" id="1_t0yj4"]
 
+[sub_resource type="Gradient" id="Gradient_t0yj4"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_r4md0"]
+gradient = SubResource("Gradient_t0yj4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpqav"]
+albedo_texture = SubResource("GradientTexture2D_r4md0")
+
 [sub_resource type="BoxMesh" id="BoxMesh_y1q5r"]
 size = Vector3(1, 0.10595703, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1q5r"]
 size = Vector3(1, 0.2, 1)
 
-[node name="Tile" type="AnimatableBody3D" unique_id=1770146868]
+[node name="Tile" type="AnimatableBody3D" unique_id=1770146868 groups=["Tiles"]]
 script = ExtResource("1_t0yj4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2137581547]
+material_override = SubResource("StandardMaterial3D_rpqav")
 mesh = SubResource("BoxMesh_y1q5r")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=743571812]
