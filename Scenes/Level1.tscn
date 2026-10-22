@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b62224amnbkuf"]
+
+[ext_resource type="PackedScene" uid="uid://cv6iys0p6g5ux" path="res://Scenes/finish.tscn" id="1_joc8x"]
+[ext_resource type="PackedScene" uid="uid://becc3opffhc2n" path="res://Scenes/Tile.tscn" id="2_jghel"]
+[ext_resource type="PackedScene" uid="uid://i73xn261ctbk" path="res://Scenes/Player.tscn" id="3_slnnj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8gbba"]
+sky_top_color = Color(0.26566312, 0.4150072, 0.82935125, 1)
+sky_horizon_color = Color(0.5734382, 0.6396782, 0.7394663, 1)
+ground_bottom_color = Color(0.08105699, 0.19667268, 0.181481, 1)
+ground_horizon_color = Color(0.5734382, 0.6396782, 0.7394663, 1)
+energy_multiplier = 8.0
+
+[sub_resource type="Sky" id="Sky_jjvhh"]
+sky_material = SubResource("ProceduralSkyMaterial_8gbba")
+
+[sub_resource type="Environment" id="Environment_kry3j"]
+background_mode = 2
+sky = SubResource("Sky_jjvhh")
+tonemap_mode = 2
+sdfgi_enabled = true
+
+[node name="Level1" type="Node3D" unique_id=695733523]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1823447326]
+environment = SubResource("Environment_kry3j")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1221689738]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="finish" parent="." unique_id=1184442250 instance=ExtResource("1_joc8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.016008)
+
+[node name="Tile" parent="." unique_id=2049357243 instance=ExtResource("2_jghel")]
+
+[node name="Tile2" parent="." unique_id=238518847 instance=ExtResource("2_jghel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Tile3" parent="." unique_id=1821310315 instance=ExtResource("2_jghel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="Player" parent="." unique_id=423152385 instance=ExtResource("3_slnnj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5216702, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=167033854]
+transform = Transform3D(-0.9999834, -0.0018515696, 0.0054666023, 0.0054843654, -0.009728403, 0.99993765, -0.001798273, 0.999951, 0.009738395, -0.03177774, 2.7142203, 0.8792176)
+fov = 114.46691

@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://crsyt1macr5jn"]
+
+[sub_resource type="Gradient" id="Gradient_506in"]
+colors = PackedColorArray(0.26566312, 0.4150072, 0.82935125, 1, 0.15016386, 0.56762385, 0.6396017, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_y1q5r"]
+gradient = SubResource("Gradient_506in")
+fill_to = Vector2(0.59130436, 0.44347826)
+
+[node name="Control" type="Control" unique_id=207929714]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1107648685]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_y1q5r")
+
+[node name="Label" type="Label" parent="." unique_id=28714892]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 134.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=146015745]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 129.0
+offset_right = 259.0
+offset_bottom = 160.0
+text = "Level 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=1065772901]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 129.0
+offset_right = 611.0
+offset_bottom = 160.0
+text = "Level 2
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="." unique_id=60550982]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 129.0
+offset_right = 921.0
+offset_bottom = 160.0
+text = "Level 3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="." unique_id=2064243508]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 267.0
+offset_right = 259.0
+offset_bottom = 298.0
+text = "Level 4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="." unique_id=1316077060]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 267.0
+offset_right = 611.0
+offset_bottom = 298.0
+text = "Level 5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button6" type="Button" parent="." unique_id=1560218803]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 267.0
+offset_right = 921.0
+offset_bottom = 298.0
+text = "Level 6"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button7" type="Button" parent="." unique_id=1456943927]
+layout_mode = 0
+offset_left = 197.0
+offset_top = 424.0
+offset_right = 259.0
+offset_bottom = 455.0
+text = "Level 7"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button8" type="Button" parent="." unique_id=239185146]
+layout_mode = 0
+offset_left = 549.0
+offset_top = 424.0
+offset_right = 611.0
+offset_bottom = 455.0
+text = "Level 8"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button9" type="Button" parent="." unique_id=1323589769]
+layout_mode = 0
+offset_left = 859.0
+offset_top = 424.0
+offset_right = 921.0
+offset_bottom = 455.0
+text = "Level 9"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button10" type="Button" parent="." unique_id=654185452]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 546.0
+offset_right = 642.0
+offset_bottom = 600.0
+text = "Level 10
+The Boss Level
+"
+metadata/_edit_use_anchors_ = true

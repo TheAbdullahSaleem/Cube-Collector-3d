@@ -8,6 +8,7 @@
 gradient = SubResource("Gradient_t0yj4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpqav"]
+albedo_color = Color(0.596367, 0.8830074, 0.99877137, 1)
 albedo_texture = SubResource("GradientTexture2D_r4md0")
 
 [sub_resource type="BoxMesh" id="BoxMesh_y1q5r"]
