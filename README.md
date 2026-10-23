@@ -15,7 +15,7 @@ This is a fun game made with just a cube. It shows us that we dont need high lev
 Made complete game in godot only the music is imported and everything is made by me except the muse
 
 ## How to install:
-No need to install just play it online
+There are files for windows mac and linux in exports folder just download them and then install any
 
 ## FEEDBACK:
 Your feedbacks are very valuable for us , comment on itch i read every comment and most probly reply in less then 24 hours
