@@ -1,5 +1,5 @@
 # CUBE THE CUBE!! 
-This is a fun game made with just a cube. It shows us that we dont need high level models to make a good interesting game 
+This is a fun game made with just a cube. It shows us that we dont need high level models to make a good interesting game and the interesting part is that its camera also rotates with the player
 <img width="552" height="325" alt="Screenshot 2026-10-23 095854" src="https://github.com/user-attachments/assets/38e4b529-f53b-46bf-bf4b-e44a696776c4" />
 <img width="900" height="266" alt="Screenshot 2026-10-23 095919" src="https://github.com/user-attachments/assets/b462c6f1-edb7-4c3e-b1a1-679ff980f507" />
 <img width="513" height="335" alt="Screenshot 2026-10-23 095907" src="https://github.com/user-attachments/assets/93edbb9e-820d-4a47-b114-6d7da31ea12f" />
