@@ -8,8 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	
+	if Input.is_action_just_pressed("Restart"):
+		get_tree().change_scene_to_file("res://Scenes/main.tscn")
 
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
@@ -19,5 +20,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 				tiles += 1
 		if tiles <= 1:
 			print("You won")
+			get_tree().change_scene_to_file("res://Scenes/main.tscn")
 		else :
 			print("Tiles still standing")
+			get_tree().reload_current_scene()

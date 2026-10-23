@@ -17,5 +17,5 @@ func _on_area_3d_body_exited(body: Node3D) -> void:
 	
 func falling():
 	is_falling = true
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.3).timeout
 	queue_free()

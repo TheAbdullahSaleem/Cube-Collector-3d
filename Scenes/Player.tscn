@@ -28,3 +28,7 @@ shape = SubResource("BoxShape3D_kf11u")
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_y1q5r")
 mesh = SubResource("BoxMesh_nl1qf")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=11068929]
+transform = Transform3D(-0.9999834, -0.0018515696, 0.0054666023, 0.0054843654, -0.009728403, 0.99993765, -0.001798273, 0.999951, 0.009738395, -0.03177774, 2.843711, -0.6188991)
+fov = 114.46691

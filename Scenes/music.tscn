@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://f3dce6fkmygv"]
+
+[ext_resource type="AudioStream" uid="uid://tj5puagnpnfc" path="res://Scenes/bassa-island-game-loop-kevin-macleod-main-version-8008-00-32.mp3" id="1_fbmny"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" unique_id=2002634966]
+stream = ExtResource("1_fbmny")
+autoplay = true
