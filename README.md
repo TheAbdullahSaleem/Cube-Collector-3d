@@ -25,3 +25,9 @@ You can use arrow keys or "A" , "D" , "S" , "W" for the controls and use control
 
 ## AI DISCLOSURE
 only for learning no direct usage
+
+## Note
+PLease use downloadable one to play the game smoothly
+
+
+
